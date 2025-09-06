@@ -1,9 +1,10 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 
 export default function Header({ toggleSidebar }) {
   return (
-    <header className="d-flex justify-content-between align-items-center px-4 py-3 bg-black text-beige position-fixed w-100" style={{ zIndex: 1200 }}>
+    <header className="d-flex justify-content-between align-items-center p-3 bg-black text-beige position-fixed w-100" style={{ zIndex: 1200 }}>
       <h2 className="text-gold m-0">Ana Moll</h2>
       <button className="btn btn-outline-light d-md-none" onClick={toggleSidebar}>
         ☰

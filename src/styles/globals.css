@@ -1,103 +1,51 @@
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css";
 
-/* 🎨 Paleta */
 :root {
   --color-negro: #000000;
   --color-dorado: #D4AF37;
   --color-beige: #F5F0E1;
 }
 
-/* 🌐 Base */
 body {
   background-color: var(--color-beige);
   color: var(--color-negro);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* ✨ Tipografías glam */
-h1, h2, h3, h4, h5 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-}
-
 .text-beige { color: var(--color-beige) !important; }
-.text-gold { color: var(--color-dorado) !important; }
+.text-gold { color: var(--color-dorado); }
+
 .bg-black { background-color: var(--color-negro) !important; }
 
-/* 🖤 Botones */
 .btn-dark {
   background-color: var(--color-negro);
   border-color: var(--color-negro);
   color: var(--color-beige);
   transition: all 0.3s;
 }
+
 .btn-dark:hover {
   background-color: var(--color-dorado);
   color: var(--color-negro);
 }
 
-.btn-gold {
+.btn-outline-light {
+  color: var(--color-dorado);
+  border-color: var(--color-dorado);
+}
+
+.btn-outline-light:hover {
   background-color: var(--color-dorado);
   color: var(--color-negro);
-  border: none;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-}
-.btn-gold:hover {
-  background-color: #b8962c;
-  color: var(--color-beige);
 }
 
-/* 👜 Cards */
 .card {
-  border-radius: 12px;
-  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-  border: 1px solid var(--color-dorado);
-}
-.card-title {
-  color: var(--color-negro);
-  font-weight: 600;
-}
-.card-text {
-  color: var(--color-dorado);
-  font-weight: 500;
-}
-
-/* 🌟 Hero */
-.hero {
-  position: relative;
-  min-height: 100vh;
-  background-image: url('/fondo-glam.jpg'); /* podés cambiar la imagen */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-}
-.hero-content {
-  position: relative;
-  color: var(--color-beige);
-}
-.hero-content h1 {
-  font-size: 3rem;
-  color: var(--color-dorado);
-}
-.hero-content p {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
